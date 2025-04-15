@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logo-vena.png';
 import './login.css';
 
 export default function Login() {
@@ -13,6 +14,7 @@ export default function Login() {
     setErro('');
 
     try {
+      console.log("a")
       const response = await fetch('http://localhost:3000/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -26,7 +28,7 @@ export default function Login() {
       }
 
       localStorage.setItem('token', data.access_token);
-      navigate('/protegido');
+      navigate('/admin');
     } catch (err) {
       setErro(err.message);
     }
@@ -35,6 +37,7 @@ export default function Login() {
   return (
     <div className="container">
       <form onSubmit={handleLogin} className="form">
+      <img src={logo} alt="Logo Vena" className="logo" />
         <h1>Login</h1>
         <input
           type="email"

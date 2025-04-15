@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logo-vena.png';
 import './register.css';
 
 export default function RegisterPage() {
@@ -36,6 +37,7 @@ export default function RegisterPage() {
   return (
     <div className="container">
       <form onSubmit={handleRegister} className="form">
+        <img src={logo} alt="Logo Vena" className="logo" />
         <h1>Cadastro</h1>
         <input
           type="text"

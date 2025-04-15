@@ -1,0 +1,55 @@
+.financeiro-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .financeiro-container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .financeiro-container input[type="file"] {
+    margin-bottom: 1rem;
+  }
+  
+  .financeiro-container button {
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .financeiro-container button:hover {
+    background-color: #1e4bb8;
+  }
+  
+  .mensagem {
+    margin-top: 1rem;
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .tabela-financeira {
+    margin-top: 2rem;
+  }
+  
+  .tabela-financeira table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabela-financeira th,
+  .tabela-financeira td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .tabela-financeira th {
+    background-color: #f0f0f0;
+  }  
